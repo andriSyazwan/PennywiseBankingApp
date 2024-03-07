@@ -1,0 +1,29 @@
+.transactionHistoryContainer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    width: 95%;
+
+    .tableHeader {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        h1 {
+            align-self: flex-start;
+            margin-left: 2rem;
+        }
+
+        button {
+            height: 2rem;
+        }
+    }
+
+    .transactionContainer {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #E5E5E5;
+    }
+}
+  
+  

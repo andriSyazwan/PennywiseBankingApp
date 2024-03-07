@@ -1,0 +1,70 @@
+.overviewCardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: auto;
+
+    padding: 20px;
+    margin-top: 5px;
+
+    a {
+        color: black;
+        width: 1000%;
+        transition: 0.3s;
+        
+        :hover{
+            background-color: rgb(236, 204, 204);
+            transition: 0.2s;
+        }
+    }
+    
+}
+
+.cardContainer {
+    height: 60%;
+    background-color: white;
+
+    border-left: 4px solid rgb(206, 46, 46);
+    border-radius: 10px;
+    padding: 20px;
+
+    text-align: left;
+}
+
+.accountNumber {
+    text-transform: uppercase;
+    border-left: 4px solid rgb(206, 46, 46);
+    padding-left: 10px;
+    font-weight: bold;
+
+    #title {
+        color: grey
+    }
+}
+
+.accountType {
+    padding-left: 14px;
+    font-size: 24px;
+    font-weight: bold;
+
+    #title {
+        color: gray;
+        font-weight: bold;
+    }
+}
+
+.balance {
+    bottom: 1000px;
+    text-align: right;
+
+    #amount {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    #title {
+        color: gray;
+        font-weight: bold;
+    }
+}

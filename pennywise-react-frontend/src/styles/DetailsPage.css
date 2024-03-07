@@ -1,0 +1,182 @@
+.detailPage {
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    height: 100vh;
+
+    .detailContainer {
+        background-color: rgba(116, 97, 97, 0.5);
+        border-radius: 10px;
+        min-width: 800px; 
+        max-width: 40%; 
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px 0px 0px;
+
+        #heading{
+            margin-right: auto;
+        }
+
+        .informationSection {
+            border-left: 4px solid rgb(206, 46, 46);
+            background-color: white;
+            border-radius: 10px;
+            width: 90%;
+            height: auto;
+        
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            :is(.numericalData, .dateData) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 5rem;
+                width: 100%;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+                text-align: left;
+                font-weight: bold;
+
+                h2 {
+                    color: gray;
+                    text-transform: uppercase;            
+                    flex: 4;
+                }
+            }
+
+            .numericalData {
+                .value {
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    gap: 1rem;
+                    flex: 5;
+                    padding-left: 1rem;
+
+                    p {
+                        padding: 0;
+                        font-size: 36px;
+                    }
+
+                    span {
+                        font-size: 1.5rem;
+                        font-weight: 200;
+                    }
+                }
+            }
+
+            .dateData {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                gap: 1rem;
+
+                p {
+                    text-align: left;
+                    flex: 5;
+                    font-size: 3rem;
+                }
+            }
+
+            h1 {
+                align-self: flex-start;
+                margin-left: 2rem;
+            }
+
+            .quickLinksOptions {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                padding: 10px;
+                background-color: white;
+                border-radius: 1rem;
+                font-size: 1.5rem;
+            }
+            
+            .statementsContainer {
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    text-align: left;
+                    padding-top: 0.7rem;
+                    padding-bottom: 0.7rem;
+                    padding-left: 2rem;
+                    background-color: white;
+                    border-radius: 1rem;
+                    font-size: 1.5rem;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+
+        :is(.recentStatementsSection, .recentTransactionsSection) {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 1rem;
+            width: 95%;
+
+            .tableHeader {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                h1 {
+                    align-self: flex-start;
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+}
+
+.iconButton{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    margin: 10px;
+    padding: 15px;
+    border: none;
+    background-color: rgba(39, 39, 39, 0.8);
+    border-radius: 10px;
+    transition: 0.2s;
+    color: white;
+}
+
+.iconButton:hover{
+    background-color: rgba(87, 67, 67, 0.6);
+    transition: 0.2s;
+}
+
+.statementsContainer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.statementItem {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 10px 0px;
+}
+
+.statementLink, .statementLink:visited {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+    /* Add any other text styles as needed */
+}
+
+.statementItem:hover {
+    background-color: rgb(236, 204, 204);
+    transition: 0.3s;
+}

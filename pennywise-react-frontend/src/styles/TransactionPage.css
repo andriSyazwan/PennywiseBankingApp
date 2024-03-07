@@ -1,0 +1,243 @@
+:is(.depositPageMain, .withdrawalPageMain, .transferPageMain, .purchasePageMain, .billPaymentPageMain) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.informationContainer {
+    border-left: 4px solid rgb(206, 46, 46);
+    background-color: white;
+    border-radius: 10px;
+    min-width: 800px;
+    max-width: 40%;
+    height: auto;
+
+    margin: 0 auto;
+    margin-top: 20px;
+
+    h1 {
+        text-align: left;
+        margin-bottom: 0.5rem;
+        padding-left: 2rem;
+    }
+
+    :is(.stringDataSection, .numericalDataSection) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5rem;
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .stringDataSection {
+        text-align: left;
+        font-weight: bold;
+
+        h2 {
+            color: gray;
+            text-transform: uppercase;
+            flex: 1;
+        }
+
+        p {
+            flex: 2;
+            padding-left: 1rem;
+            font-size: 24px;
+        }
+    }
+
+    .numericalDataSection {
+        text-align: left;
+
+        h2 {
+            color: gray;
+            text-transform: uppercase;
+            flex: 1;
+        }
+
+        .value {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            gap: 1rem;
+            flex: 2;
+            padding-left: 1rem;
+
+            p {
+                font-weight: bold;
+                font-size: 2rem;
+                padding: 0;
+            }
+
+            span {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.purchaseTypeContainer {
+    display: flex;
+    min-width: 800px;
+    max-width: 40%;
+    margin-top: 10px;
+}
+
+:is(.depositForm, .withdrawalForm, .transferForm, .purchaseForm, .billPaymentForm, .redeemRebatesForm, .redeemPointsForm) {
+    display: flex;
+    flex-direction: column;
+    align-content: space-center;
+    align-items: center;
+
+    border-left: 4px solid rgb(206, 46, 46);
+    background-color: white;
+    border-radius: 10px;
+    min-width: 800px;
+    max-width: 40%;
+    height: auto;
+
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+
+    :is(.field, button) {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .field {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        width: 70%;
+
+        label {
+            font-size: 1.5rem;
+        }
+
+        .fieldInput {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+
+            span {
+                margin-left: 0.5rem;
+            }
+        }
+    }
+}
+
+:is(.depositForm, .withdrawalForm, .billPaymentForm, .redeemRebatesForm) {
+    .field {
+        label {
+            flex: 3;
+        }
+
+        .fieldInput {
+            flex: 7;
+        }
+    }
+}
+
+.transferForm {
+    .field {
+        label {
+            flex: 4;
+        }
+
+        .fieldInput {
+            flex: 6;
+        }
+    }
+}
+
+.purchaseForm {
+    .field {
+        label {
+            flex: 1;
+        }
+
+        .fieldInput {
+            flex: 3;
+        }
+    }
+}
+
+
+.redeemPointsForm {
+    .field {
+        width: 75%;
+
+        label {
+            flex: 3;
+        }
+
+        :is(#voucherDenomination, #milesDenomination) {
+            flex: 2;
+        }
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+select,
+input {
+    flex: 1;
+    height: 2rem;
+    border: 1px solid black;
+    padding: 0%;
+    padding-left: 5px;
+}
+
+input {
+    padding-left: 4px;
+}
+
+.globalInput {
+
+    border-left: solid rgb(68, 68, 68) 3px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Open-Sans', sans-serif;
+    padding-left: 5px;
+}

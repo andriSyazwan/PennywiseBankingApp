@@ -1,0 +1,68 @@
+.banner {
+    text-align: center;
+    font-size: 50px;
+    margin: 20px;
+    align-self: center;
+    color:aliceblue
+}
+
+.banner span {
+        text-shadow: 1px 1px 2px red;  
+}
+
+.mainSection img {
+    width: 400px; 
+    height: 250px; 
+   margin: 10px; 
+}
+
+.mainSection h2 {
+    text-decoration-line: underline overline;
+    font-size: 35px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    line-height: 5;
+    letter-spacing: 10px;
+    color:white
+    
+}
+
+.mainSection p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.mainSection h3 {
+    text-decoration-line: underline overline;
+    font-size: 35px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    line-height: 5;
+    letter-spacing: 10px;
+    color:white
+    
+}
+
+
+.earnSection {
+    display: flex;
+    align-items: center;
+    justify-content: flex-center; 
+}
+
+.earnSection img {
+    width: 400px;
+    height: 250px;
+    margin-left: 20%; 
+    margin-right: 5%
+}
+
+
+.balancesContainer{
+    color:white;
+}

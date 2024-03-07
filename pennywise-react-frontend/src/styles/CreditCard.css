@@ -1,0 +1,70 @@
+.creditCardVisualSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    background: rgb(172,100,114);
+    background: radial-gradient(circle, rgba(172,100,114,1) 0%, rgba(128,32,32,1) 100%);
+    box-shadow: 0px 5px 20px 5px rgba(0,0,0,0.4);
+    border-radius: 0.7rem;
+    aspect-ratio: 1.586;
+    height: auto;
+    width: auto;
+    color:white;
+
+    .bankName {
+        margin-top: 1rem;
+        margin-bottom: 0rem;
+        font-size: 2rem;
+        height: auto;
+        width: 11rem;
+        filter: drop-shadow(0px 0px 1px #000000);
+    }
+
+    .cardNumber {
+        margin-top: 2rem;
+        margin-bottom: 0;
+        font-size: 1.2rem;
+    }
+
+    .expiryDate {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-top: 0.1rem;
+        margin-left: 2rem;
+        height: 3rem;
+
+        .validThru {
+            width: 1rem;
+            font-size: 0.7rem;
+        }
+
+        .expiryDateValue {
+            margin-left: 1.2rem;
+        }
+    }
+
+    .bottomRow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+        height: 2rem;
+        width: 100%;
+
+        .logo {
+            display: flex;
+            padding-right: 1rem;
+            height: auto;
+            width: 3rem;
+        }
+
+        .displayName{
+            text-transform: uppercase;
+        }
+    }
+    
+}

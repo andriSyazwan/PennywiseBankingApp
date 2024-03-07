@@ -1,0 +1,41 @@
+.detailedTransactionCard {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    background-color: white;
+    transition: 0.3s;
+
+    :is(.heading, .headingDate) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+
+        .label {
+            font-size: 12px;
+        }
+    }
+
+    .heading {
+        display: block;
+        flex: 1;
+        margin: auto;
+    }
+
+    .amountContainer {
+        flex: 1;
+        margin: 0;
+        padding: 0;
+
+        div {
+            padding-right: 1rem;
+        }
+    }
+}
+
+.detailedTransactionCard:hover {
+    background-color: rgb(255, 238, 238);
+    transition: 0.3s;
+}
